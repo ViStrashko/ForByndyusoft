@@ -24,9 +24,9 @@ namespace Test.Support
             return _instance;
         }
 
-        public static void CloseDriver()
+        public static void QuitChrome()
         {
-            _instance.Close();
+            _instance.Quit();
             _instance = null;
         }
     }
